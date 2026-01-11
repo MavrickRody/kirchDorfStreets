@@ -1,0 +1,83 @@
+.layers-content {
+  padding: 20px;
+  min-height: 200px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.layers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.layer-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.layer-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.layer-info h3 {
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.layer-info p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.layer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.layer-actions .icon-button {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.layer-actions .icon-button:hover {
+  background: var(--surface);
+}
+
+.layer-actions .icon-button.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.layer-actions .icon-button.danger:hover {
+  background: var(--danger-color);
+  border-color: var(--danger-color);
+  color: white;
+}
