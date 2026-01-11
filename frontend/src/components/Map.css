@@ -1,0 +1,95 @@
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+.marker-pin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50% 50% 0;
+  position: relative;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.marker-pin:hover {
+  transform: rotate(-45deg) scale(1.1);
+}
+
+.marker-icon {
+  transform: rotate(45deg);
+  font-size: 20px;
+}
+
+.marker-available {
+  background: #10b981;
+  border: 3px solid #059669;
+}
+
+.marker-occupied {
+  background: #ef4444;
+  border: 3px solid #dc2626;
+}
+
+.marker-selected {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.map-popup {
+  padding: 12px;
+  min-width: 200px;
+}
+
+.map-popup h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.map-popup p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.map-popup strong {
+  color: var(--text-primary);
+}
+
+.location-button {
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-button:hover {
+  background: #f9fafb;
+}

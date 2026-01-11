@@ -1,0 +1,88 @@
+.upload-content {
+  padding: 20px;
+}
+
+.upload-zone {
+  border: 3px dashed var(--border);
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: var(--surface);
+  margin-bottom: 30px;
+}
+
+.upload-zone:hover {
+  border-color: var(--primary-color);
+  background: #eff6ff;
+}
+
+.upload-zone.drag-active {
+  border-color: var(--primary-color);
+  background: #dbeafe;
+  transform: scale(1.02);
+}
+
+.upload-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.upload-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.upload-subtext {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.upload-tips {
+  background: #fef3c7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-tips h3 {
+  font-size: 16px;
+  color: #92400e;
+  margin-bottom: 10px;
+}
+
+.upload-tips ul {
+  margin-left: 20px;
+  color: #92400e;
+}
+
+.upload-tips li {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.example-geojson {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.example-geojson h4 {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.example-geojson pre {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 11px;
+  overflow-x: auto;
+  color: var(--text-primary);
+  font-family: 'Courier New', monospace;
+}
